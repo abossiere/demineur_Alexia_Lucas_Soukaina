@@ -1,11 +1,9 @@
-package EtatsCase;
-
 public class EtatCaseDecouverte implements EtatCase {
 
-    private SimCase sim_;
+    private Case case_;
 
-    public EtatCaseDecouverte(SimCase sim){
-        sim_ = sim;
+    public EtatCaseDecouverte(Case uneCase){
+        case_ = uneCase;
     }
 
     public void drapeau(){
@@ -13,5 +11,9 @@ public class EtatCaseDecouverte implements EtatCase {
     }
     public void selectionner(){
         // ne rien faire
+    }
+
+    public String getVisibleValue(){
+        return null;
     }
 }
